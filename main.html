@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Деревянный, но с душой</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/png">
+  <script defer src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+   
+    <div id="about">
+      <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Ассортимент</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Обратная связь">Обратная связь</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+    </div>
+
+  </header>
+
+  <div id="top">
+    <h1>Деревянный,</h1>
+    <h3>но с душой</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Широкий выбор</h2>
+      <span>Вы можете выбрать готовое изделие из ассортимента или сделать индивидуальный заказ.</span>
+    </div>
+    <div class="text">
+      <span>У нас есть все, что вам нужно, чтобы преобразить ваш дом, сад и офис в прекрасные места, полные теплоты и уюта. "Деревянный, но с душой" - означает единство мастерства и искусства.
+
+  Наша мастерская предлагает широкий ассортимент изделий из дерева, включая:<br>
+  Красивые и удобные стулья и столы для вашей гостиной или обеденной зоны.<br>
+  Кровати, которые превратят вашу спальню в истинный уголок комфорта.<br>
+  Полки и книжные шкафы для организации вашей библиотеки.<br>
+  Горшки и подставки для растений, чтобы создать зеленый оазис у вас дома.</span>
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Виды изделий </h2>
+    <h4></h4>
+    <div class = "slideshow-container">
+      <div class = "mySlides fade">
+        <div class="numbertext">1/4</div>
+          <img src="img/img1.jpg" style="height: 700px; widows: auto;" alt="">
+     </div>
+
+      <div class = "mySlides fade">
+        <div class="numbertext">2/4</div>
+          <img src="img/img2.jpg" style="height: 700px;widows: auto;" alt="">
+     </div>
+
+     <div class = "mySlides fade">
+        <div class="numbertext">3/4</div>
+          <img src="img/img3.jpg" style="height: 700px;widows: auto;" alt="">
+     </div>
+
+      <div class = "mySlides fade">
+        <div class="numbertext">4/4</div>
+          <img src="img/img4.jpg" style="height: 700px;widows: auto;" alt="">
+     </div>
+     <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+    <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+      <br>
+
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"> </span>
+      <span class="dot" onclick="currentSlide(2)"> </span>
+      <span class="dot" onclick="currentSlide(3)"> </span>
+      <span class="dot" onclick="currentSlide(4)"> </span>
+  </div>
+    
+  </div>
+
+
+  <div id="contacts">
+    <center><h5>Обратная связь</h5></center>
+    <form id="form_input">
+      <label for="name">Имя <span>*</span></label><br>
+      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+    </form>
+  </div>
+
+  <div id="faq">
+    <div>
+      <article>
+      <h2 class="active" id="click">Качество</h2>
+      <p style="display: none;">Мы используем только высококачественное дерево, чтобы гарантировать долговечность и прочность каждого изделия.</p>
+      </article>
+      <article>
+      <h2>Реклама</h2>
+      <p>Также у нас есть отдел, занимающийся фуд-флористикой. Вы можете заказать съедобный подарок своим родственникам или друзьям. Получить съедобный букет будут рады дети и взрослые.</p>
+      </article>
+    </div>
+    <div>
+      <article>
+      <h2>Гарантии</h2>
+      <p>Мы изготавливаем качественные изделия, на которые даём гарантию. При необходимости вы можете обратиться к нам за ремонтом или заменой, а также реставрацией какого-либо изделия.</p>
+      </article>
+      <article>
+      <h2>Заказ</h2>
+      <p>Вы можете довериться нам в изготовлении индивидуального изделия. Для этого нужно всего лишь написать нам и рассказать о вашиж желаниях и предпочтениях в цвете/материале.</p>
+      </article>
+    </div>
+
+  </div>
+</body>
+</html>
